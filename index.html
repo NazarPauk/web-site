@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400&display=swap" rel="stylesheet">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web - design</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.608)), url(fone2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    a{
+        text-decoration: none;
+    }
+    .header-text{
+        text-decoration: none;
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
+        font-size:40px;
+        padding-top: 30px;
+        font-weight:bold;
+        color: black;
+        height: 70px;
+        width: 100%;
+
+    }
+    .header-text:hover {
+        background:linear-gradient( blue 50%,yellow 50%);
+        transition: .6s;
+    }
+
+    header{
+        height: 100px;
+        background-color:rgba(255, 255, 255, 0.479);
+        display: block;
+    }
+
+    footer{
+        font-family: 'Titillium Web', sans-serif;
+        clear: both;
+        background-color: rgba(0, 0, 0, 0.311);
+        color: white;
+        height: 140px;
+        display: flex;
+        float: bottom;
+    }
+
+    .menu{
+        width: 15%;
+        height: 800px;
+        background:linear-gradient( rgba(0, 191, 255, 0.33),rgba(0, 191, 255, 0.09),#7cb3ff00) ;
+        float: left;
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+
+    .content{
+        width: 85%;
+        height: 100%;
+        float: left;    
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+
+    .content p{
+        font-size:18px ;
+    }
+
+    button{
+        width: 150px auto;
+        height: 60px ;
+        font-size: 25px;
+        padding: 10px 10px;
+        background-color: rgba(0, 255, 255, 0);
+        border: .5px solid rgba(0, 255, 64, 0);
+        margin: 0 auto;
+        display: block;
+        color:rgb(255, 255, 255);
+        font-weight: bold;
+        border-radius: 5px;
+        background-color:  rgba(0, 255, 187, 0.33) ; 
+        display: block;  
+        margin-bottom: 80px;
+        box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.487);
+
+
+        }
+        button:hover{
+            background-color:  rgba(0, 255, 106, 0.575)  ;
+            transition: .2s;
+            box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.487);
+
+        }
+        .nav a{
+            font-size:15px ;
+            font-family: 'Fira Sans', sans-serif;
+            color: white;
+        }
+
+        .nav a:hover{
+            text-decoration:underline 1px solid rgb(13, 255, 0);
+            transition: .7s;
+
+        }
+
+        .video{
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+    
+   
+   .social {display: inline-block;}
+.social a {
+	display:block;
+	width: 48px;
+	height: 48px;
+	margin: 0 10px 10px 0 ;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 24px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+}
+.social a:hover {color: #fff;}
+.social svg {
+	margin-top: 7px;
+	width: 32px;
+	height: 32px;
+}
+.facebook a:hover {background: #3b5998;}
+.instagram a:hover {background: #ff0062;}
+.twitter a:hover {background: #00acee;}
+.youtube a:hover {background: #c4302b;}
+
+        .soc{
+            margin-top: 40px;
+        }
+
+</style>
+<body>
+
+<header>
+    <a href="index.html"><div class="header-text">Назар Паук</div></a>
+</header>
+    <div class="menu">
+<h2 style="margin-left: 10px; background-color: rgba(0, 0, 0, 0.17);">Menu</h2>
+        <marquee style="background-color: rgb(0, 255, 102); color: white; font-size: 10px; color: black;"><b>Н А В І Г А Ц І Я !!!</b></marquee>
+        <ul class="nav">
+            <li><a href="#a">Бігаючі рядки</a></li>
+            <li><a href="#b">Формування символів</a></li>
+            <li><a href="#ab">Списки</a></li>
+            <li><a href="#e">Таблиці</a></li>
+            <li><a href="#f">Блоки</a></li>
+            <li><a href="#g">Структура сайта</a></li>
+        </ul>
+
+    </div>
+    <div class="content">
+        <h2 style="margin-left: 40px; "><a style="color: orange;">Про </a>HTML\CSS</h2>
+        <h3 style="text-align:center; color: rgb(255, 8, 0);"> &#60; HTML &#62;</h3>
+        <p style="margin: 15px; font-family: 'Ubuntu', sans-serif;;"><b>HTML</b> (англ. HyperText Markup Language — мова розмітки гіпертексту) — стандартизована мова розмітки документів для перегляду веб-сторінок у браузері. Веб-браузери отримують HTML документ від сервера за протоколами HTTP/HTTPS або відкривають з локального диска, далі інтерпретують код в інтерфейс, який відображатиметься на екрані монітора.Елементи HTML є будівельними блоками сторінок HTML. За допомогою конструкцій HTML, зображення та інші об'єкти, такі як інтерактивні форми, можуть бути вбудовані у візуалізовану сторінку. HTML надає засоби для створення структурованих документів, позначаючи структурну семантику тексту, наприклад заголовки, абзаци, списки, посилання, цитати та інші елементи. Елементи HTML окреслені тегами, написаними з використанням кутових дужок. Теги на кшталт < img /> чи < input /> безпосередньо виводять вміст на сторінку. Інші теги, такі як < p>, оточують текст і надають інформацію про нього, а також можуть включати інші теги як піделементи. Браузери не показують теги HTML, але використовують їх для інтерпретації вмісту сторінки.</>
+                <div class="video"> 
+                        <iframe width="450" height="250" src="https://www.youtube.com/embed/bWNmJqgri4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <h3 style="text-align:center; color: blue;"> &#60; CSS &#62;</h3>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;"><b>CSS</b> (англ. Cascading Style Sheets, укр. Каскадні таблиці стилів) — це спеціальна мова стилю сторінок[en], що використовується для опису їхнього зовнішнього вигляду. Самі ж сторінки написані мовами розмітки даних.
+            CSS є основною технологією всесвітньої павутини, поряд із HTML та JavaScript[1].           
+            Найчастіше CSS використовують для візуальної презентації сторінок, написаних HTML та XHTML, але формат CSS може застосовуватися до інших видів XML-документів.           
+            Специфікації CSS були створені та розвиваються Консорціумом Всесвітньої мережі.           
+            CSS має різні рівні та профілі. Наступний рівень CSS створюється на основі попередніх, додаючи нову функціональність або розширюючи вже наявні функції. Рівні позначаються як CSS1, CSS2 та CSS3. Профілі — сукупність правил CSS одного або більше рівнів, створені для окремих типів пристроїв або інтерфейсів. Наприклад, існують профілі CSS для принтерів, мобільних пристроїв тощо.</p>
+                <div class="video">
+                        <iframe width="450" height="250"  src="https://www.youtube.com/embed/iPV5GKeHyV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <hr>
+            <h2 style="margin-left: 40px; "><a style="color: orange;" >Мої </a>Роботи</h2>
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="a"> &#60; Бігаючі рядки\Шатери &#62;</a></h3>
+        <p style="margin: 15px; font-family: 'Ubuntu', sans-serif;;">Шатери у сучасний час все більше та більше відходять у минуле їх все менше можна заміти на сучасних сайтах, але все ж таки на деяких їх всетаки можна зустріти і для застосування їх на сайтах в html використовують тег  &#60;marquee&#62; та для їх редагування в CSS використовуються типічні теги як height, weight, color, background тд. Приклад роботи шатерів можете глянути натиснувши на кнопку  </p>
+            <form  action="Example/site4.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>    
+
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="b"> &#60;Формування символів та слів&#62;</a></h3>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Формування слів та символів потрібне для збільшення читабельності сайту та покращення його естетичного вигляду. їхнє формування відбувається в <b>CSS</b> за допомогою таких тегів як Теги форматування символів тексту (вони парні):
+            <p>&#60;B&#62;текст&#60;/B&#62; - Напівжирний шрифт тексту</p>            
+            <p>&#60;I&#62;текст&#60;/I&#62; - Шрифт-курсив</p>           
+            <p>&#60;U&#62;текст&#60;/U&#62; - Підкреслений шрифт</p>  
+            <p>&#60;SUB&#62;текст&#60;/SUB&#62; - Нижній індекс</p>   
+            <p>&#60;SUP&#62;текст&#60;/SUP&#62; - Верхній індекс</p>      
+            <p>&#60;BIG&#62;текст&#60;/BIG&#62; - Великий шрифт</p>
+            <p>&#60;SMALL&#62;текст&#60;/SMALL&#62; - Малий шрифт</p>
+            <form  action="Example/site5.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>    
+        
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="ab"> &#60;Списки&#62;</a></h3>
+            <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">На цьому сайті список можна побачити у меню, він іграє роль навігації. Для створення списку в HTML використовуються такі теги як &#60;ul&#62; - прокрапкований список &#60;ol&#62; - пронумерований список (можна замінити цифри на інші символи) &#60;li&#62; - компонент списка </p>
+            <form  action="Example/site6.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>  
+
+                    
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="e"> &#60;Таблиці&#62;</a></h3>
+            <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Таблиця - це структурований набір данных, що міститься із строк і столбцов ( табличних данных ). Таблиці дозволяють швидко і легко переглядати значення, показуючи некоторую взаємозв'язок між різними типами даних, наприклад - людину та його вік, або розклад у плавальному басейні.</p>
+            <form  action="Example/site7.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>  
+
+                    
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="f"> &#60;Блоки&#62;</a></h3>
+            <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Кожен елемент у CSS укладено в блок, а також позначення цих блоків — це ключ до уміння задавати розкладку за допомогою CSS, щоб вибудовувати окремі елементи щодо інших елементів. У цьому урокі ми надзвичайним чином розглянемо блочну модель CSS, щоб ви могли створювати більш складні розкладки, понімаючи принцип її роботи та термінологію, яка до неї відноситься.</p>
+            <form  action="Example/site8.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>  
+
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="g"> &#60;Структура сайта&#62;</a></h3>
+            <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Структура сайту - це логічне побудова всіх сторінок сайту, категорій та підкатегорій. Це логічна схема, відповідно до якої всі сторінки та розділи сайту розташовані відносно один одного та принцип, за яким вони взаємопов'язані між собою. Для створення структури вбільшості використовуються такі теги як &#60;header&#62; - для створення шапки сайта , та &#60;footer&#62; - для створення підвалу сайта, а для навігації, меню, контенту і тд використовують тег &#60;div&#62; </p>
+            <form  action="Example/site9.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>  
+
+    </div>
+    <footer>
+        <h1 style="margin-right: 100px; margin-top: 50px;"><a style="color: orange; margin-left: 400px;">My</a> contacts</h1>
+    <div class="soc">
+        <div class="social facebook">
+            <a href="https://www.facebook.com/nazar.pauk.9" target="_blank">
+                <svg role="img" viewBox="0 0 320 512">
+                    <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social instagram">
+            <a href="https://www.instagram.com/_nazar_pauk_/" target="_blank">
+                <svg role="img" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social twitter">
+            <a href="https://twitter.com/_Nazar_Pauk_" target="_blank">
+                <svg role="img" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="social youtube">
+            <a href="#" target="_blank">
+                <svg role="img" viewBox="0 0 576 512">
+                    <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+            </footer>
+</body>
+</html>

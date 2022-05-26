@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(1, 167, 167);
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+}
+
+ul,ol{
+    text-shadow: rgba(0, 0, 0, 0.508) 2px 2px ;
+    font-size: 30px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 40px;
+    float: left;
+}
+
+.one{
+    list-style: none;
+}
+
+.one li::before{
+    content:"\2713";
+}
+
+.two{
+    list-style: none;
+    list-style-image: url(al.png);
+
+}
+

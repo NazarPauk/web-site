@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(87, 25, 145);
+    }
+    p{
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    table{
+        font-size: 20px;
+        width: 500px;
+        margin: 10px auto;
+
+    }
+    th,td{
+        border: solid 2px rgb(0, 255, 8);
+        color: white;
+        width: 150px;
+    }
+    tr{
+        height: 1cm;
+    }
+    .tr1:hover{
+        background-color: rgb(0, 0, 0);
+    }
+
+    .tr2:hover{
+        background-color: red;
+    }
+    .tr3:hover{
+        background-color: rgb(0, 255, 0);
+    }
+
+    .tr4:hover{
+        background-color: blue;
+    }
+    .tr5:hover{
+        background-color: yellow;
+    }
+
+    .tr6:hover{
+        background: rgb(141, 141, 141);
+    }
+    .td6:hover{
+        color:black;
+    }
+    td:hover{
+        background: rgb(0, 255, 0);
+        font-size: 1.3em;
+    }
+    caption{
+        font-size: 27px;
+        color: white;
+    }
+</style>
+<body>
+    <p>Ми вивчаємо таблиці</p>
+    <table>
+        <caption>Table colors</caption>
+        <tr>
+            <th>Color</th>
+            <th>Name</th>
+            <th>HEX</th>
+            <th>RGB</th>
+        </tr>
+        <tr class="tr1">
+            <td style="background-color: black;"></td>
+            <td>black</td>
+            <td>#000000</td>
+            <td>(0,0,0)</td>
+        </tr>
+        <tr class="tr2">
+            <td style="background-color: rgb(255, 0, 0);"></td>
+            <td>red</td>
+            <td>#ff0000</td>
+            <td>(255,0,0)</td>
+        </tr>
+        <tr class="tr3">
+            <td style="background-color: rgb(0, 255, 0);"></td>
+            <td>green</td>
+            <td>#00ff00</td>
+            <td>(0, 252, 0)</td>
+        </tr>
+        <tr class="tr4">
+            <td style="background-color: rgb(0, 0, 255);"></td>
+            <td>blue</td>
+            <td>#0000ff</td>
+            <td>(0,0,255)</td>
+        </tr>
+        <tr class="tr5">
+            <td style="background-color: rgb(255, 255, 0);"></td>
+            <td>yellow</td>
+            <td>#ffff00</td>
+            <td>(255, 255, 0)</td>
+        </tr>
+        <tr class="tr6">
+            <td class="td6" style="background-color: white;"></td>
+            <td class="td6">white</td>
+            <td class="td6">#ffffff</td>
+            <td class="td6">(255,255,255)</td>
+        </tr>
+
+    </table>
+</body>
+</html>
