@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Compliments</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let compliments = ['добрі', 'красиві', 'турботливі', 'милі', 'щедрі','надійні', 'розумні', 'дотепні', 'мудрі', 'дружелюбні'];
+		  let animals =['пес', 'кіт', 'мишка', 'лев', 'рибка', 'жирафа', 'панда', 'метелик', 'лисиця', 'черепаха', 'медвідь', 'сокіл', 'слон'];
+		   let number = prompt('скільки компліментів ви бажаєте?)', '');
+		 for(count = 1; count<=number; count++){
+		 	let rand_com = Math.floor(Math.random()*compliments.length);
+		 	let rand_ani = Math.floor(Math.random()*animals.length);
+		 	while(isNaN(number)){
+		 		let x = prompt('Введіть число', '');}
+
+		 		if (number == null) {
+		 		alert('до побачення');
+		 	} else {
+		 document.write(count + ". Ви такі " + compliments[rand_com] + ' як ' + animals[rand_ani] +  '<br>');}
+		 }
+	</script>
+
+</body>
+</html>

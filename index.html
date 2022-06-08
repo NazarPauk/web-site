@@ -65,7 +65,9 @@
         font-family: 'Barlow', sans-serif;
         color: white;
     }
-
+    p{
+        text-indent: 20px;
+    }
     .content p{
         font-size:18px ;
     }
@@ -152,12 +154,17 @@
 <h2 style="margin-left: 10px; background-color: rgba(0, 0, 0, 0.17);">Menu</h2>
         <marquee style="background-color: rgb(0, 255, 102); color: white; font-size: 10px; color: black;"><b>Н А В І Г А Ц І Я !!!</b></marquee>
         <ul class="nav">
+            <li><a href="#h">Перша веб-сторінка</a></li>
+            <li><a href="#i">Градієнти</a></li>
+            <li><a href="#j">Фон в CSS</a></li>
             <li><a href="#a">Бігаючі рядки</a></li>
             <li><a href="#b">Формування символів</a></li>
             <li><a href="#ab">Списки</a></li>
             <li><a href="#e">Таблиці</a></li>
             <li><a href="#f">Блоки</a></li>
             <li><a href="#g">Структура сайта</a></li>
+            <li><a href="#k">Вгадування числа</a></li>
+            <li><a href="#l">Генерація компліментів</a></li>
         </ul>
 
     </div>
@@ -178,14 +185,52 @@
                         <iframe width="450" height="250"  src="https://www.youtube.com/embed/iPV5GKeHyV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             <hr>
-            <h2 style="margin-left: 40px; "><a style="color: orange;" >Мої </a>Роботи</h2>
-        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="a"> &#60; Бігаючі рядки\Шатери &#62;</a></h3>
+            <h2 style="margin-left: 40px; font-weight: 700; "><a style="color: orange;" >Мої </a>Роботи</h2>
+
+            <h2 style=" text-align:center; color: rgb(255, 0, 0); margin-bottom: 40px;">HTML/CSS</h2>
+
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="h">Перша веб-сторінка</a></h3>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Для позначення меж HTML-документу використовується подвійний тег <html>. Початковий тег &#60;html&#62;, а кінцевий тег &#60;/html&#62; є останнім тегом коду і позначає закінчення всього документу.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Заголовок HTML-документу визначається елементом HEAD. Тег &#60;HEAD&#62; не має атрибутів. Елемент HEAD розміщується одразу після тегу &#60; HTML &#62;, перед основною частиною Web-сторінки </p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">До заголовку документу входить обов'язковий елемент, який представлений контейнером &#60;title&#62;. Все, що знаходиться між парою тегів &#60;title&#62; і &#60;/title&#62;, інтерпретується браузером як назва Web-сторінки.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Елемент BODY є наступним компонентом Web-сторінки. Парні теги &#60;body&#62; і &#60;/body&#62; вказують на початок і кінець тіла документа. Весь зміст документа міститься в елементі BODY.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;"></p>
+
+        <form  action="Example/site1.html" target="_blank"> 
+            <button>Приклад</button>
+        </form>  
+
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="i">Градієнти</a></h3>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">CSS-градієнти  представлені типом даних  &#60;gradient&#62; (en-US) , спеціальним типом  &#60;image&#62; (en-US) , що складається з послідовного переходу між двома та більше кольорами. Ви можете вибрати один із трьох типів градієнтів: лінійний (створюється за допомогою функції linear-gradient), круговий (створюється за допомогою radial-gradient)</p>
+
+        <form  action="Example/site2.html" target="_blank"> 
+            <button>Приклад</button>
+        </form>  
+
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="j">Фон в CSS</a></h3>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">CSS-властивість background-image використовується для вставки фонового зображення.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">background-repeat - задає можливість повторення фонового зображення.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">background-attachment - вказує, чи повинно фонове зображення прокручуватися разом з текстом елементу або воно повинно залишатися нерухомим.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Властивість background входить до складу всіх властивостей, перерахованих у цьому уроці.<br>За допомогою background можна стискати кілька властивостей і записувати стилі в скороченому вигляді, що полегшує читання таблиць.</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Порядок властивостей цього елемента такий:</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">[background-color] | [background-image] | [background-repeat] | [background-attachment] | [background-position]</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Наприклад:</p>
+        <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">background: # FFCC66 url ("butterfly.gif") no-repeat fixed right bottom;</p>
+
+
+
+        <form  action="Example/site3.html" target="_blank"> 
+            <button>Приклад</button>
+        </form>  
+
+
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="a">Бігаючі рядки\Шатери</a></h3>
         <p style="margin: 15px; font-family: 'Ubuntu', sans-serif;;">Шатери у сучасний час все більше та більше відходять у минуле їх все менше можна заміти на сучасних сайтах, але все ж таки на деяких їх всетаки можна зустріти і для застосування їх на сайтах в html використовують тег  &#60;marquee&#62; та для їх редагування в CSS використовуються типічні теги як height, weight, color, background тд. Приклад роботи шатерів можете глянути натиснувши на кнопку  </p>
             <form  action="Example/site4.html" target="_blank"> 
                 <button>Приклад</button>
             </form>    
 
-        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="b"> &#60;Формування символів та слів&#62;</a></h3>
+        <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="b">Формування символів та слів</a></h3>
         <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Формування слів та символів потрібне для збільшення читабельності сайту та покращення його естетичного вигляду. їхнє формування відбувається в <b>CSS</b> за допомогою таких тегів як Теги форматування символів тексту (вони парні):
             <p>&#60;B&#62;текст&#60;/B&#62; - Напівжирний шрифт тексту</p>            
             <p>&#60;I&#62;текст&#60;/I&#62; - Шрифт-курсив</p>           
@@ -198,29 +243,43 @@
                 <button>Приклад</button>
             </form>    
         
-            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="ab"> &#60;Списки&#62;</a></h3>
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="ab"> Списки;</a></h3>
             <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">На цьому сайті список можна побачити у меню, він іграє роль навігації. Для створення списку в HTML використовуються такі теги як &#60;ul&#62; - прокрапкований список &#60;ol&#62; - пронумерований список (можна замінити цифри на інші символи) &#60;li&#62; - компонент списка </p>
             <form  action="Example/site6.html" target="_blank"> 
                 <button>Приклад</button>
             </form>  
 
                     
-            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="e"> &#60;Таблиці&#62;</a></h3>
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="e">Таблиці</a></h3>
             <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Таблиця - це структурований набір данных, що міститься із строк і столбцов ( табличних данных ). Таблиці дозволяють швидко і легко переглядати значення, показуючи некоторую взаємозв'язок між різними типами даних, наприклад - людину та його вік, або розклад у плавальному басейні.</p>
             <form  action="Example/site7.html" target="_blank"> 
                 <button>Приклад</button>
             </form>  
 
                     
-            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="f"> &#60;Блоки&#62;</a></h3>
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="f"> Блоки</a></h3>
             <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Кожен елемент у CSS укладено в блок, а також позначення цих блоків — це ключ до уміння задавати розкладку за допомогою CSS, щоб вибудовувати окремі елементи щодо інших елементів. У цьому урокі ми надзвичайним чином розглянемо блочну модель CSS, щоб ви могли створювати більш складні розкладки, понімаючи принцип її роботи та термінологію, яка до неї відноситься.</p>
             <form  action="Example/site8.html" target="_blank"> 
                 <button>Приклад</button>
             </form>  
 
-            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="g"> &#60;Структура сайта&#62;</a></h3>
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="g"> Структура сайта</a></h3>
             <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Структура сайту - це логічне побудова всіх сторінок сайту, категорій та підкатегорій. Це логічна схема, відповідно до якої всі сторінки та розділи сайту розташовані відносно один одного та принцип, за яким вони взаємопов'язані між собою. Для створення структури вбільшості використовуються такі теги як &#60;header&#62; - для створення шапки сайта , та &#60;footer&#62; - для створення підвалу сайта, а для навігації, меню, контенту і тд використовують тег &#60;div&#62; </p>
             <form  action="Example/site9.html" target="_blank"> 
+                <button style="margin-bottom:140px ;">Приклад</button>
+            </form>  
+
+            <h2 style=" text-align:center; color:orange; margin-bottom: 40px;">JavaScript</h2>
+
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="k">Вгадування числа</a></h3>
+            <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">Тут ми зробили сайт за допомогою JavaScript в якому пропонуєм вам вгадати випадкове число від 0 до 100</p>
+            <form  action="Example/site10.html" target="_blank"> 
+                <button>Приклад</button>
+            </form>  
+
+            <h3 style="text-align:center; color: rgb(60, 255, 0);"><a name="l">Генерація компліментів</a></h3>
+            <p style="margin: 15px;  font-family: 'Ubuntu', sans-serif;">В цьому сайті за допомогою JavaScript ми зробили генерацію компліментів і дали вам можливість вибрати їхню кількість</p>
+            <form  action="Example/site11.html" target="_blank"> 
                 <button>Приклад</button>
             </form>  
 
